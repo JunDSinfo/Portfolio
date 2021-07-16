@@ -2,13 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import PaperCards from "./PaperCards";
 
 function Projects() {
   return (
@@ -16,72 +10,127 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Because of the non-disclosure terms, only the description and role of product projects are shown.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Natural Language Generation Research at Korbit"
+              description="Personal Hint Generations project is the part of Korbit
+               which was built with machine learning and state-of-the-art natural language
+               processing technique. The results allows Korbi - an AI Tutor to generate hint
+               based on the open source content with high student learning gain (43%)."
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Research Shazam Image project and Develop the User Interface of the Timesheet project at Biliomondo"
+              description="Research the application by using Python, and Android Studio, Webstorm, IntelliJ IDEA
+              (e.g., Research the Object recognition and Hologram module) by using CNN and Tensorflow.
+               Create the language locale and UI module by using Reactjs, Momentjs, Redux-sagas at Timesheet projecty"
+            />
+          </Col>
+          <Col md={6} className="project-card">
+            <ProjectCard
+
+                isBlog={false}
+                title="Civil Infrastruture Platform project at Renesas"
+                description="Apply OS patches and upgrades on a regular basis.
+                Configure/add new services as necessary and maintain a big system based
+                on big data analysis. Upgrade and configure system software that supports
+                infrastructure applications or Asset Management applications per project or
+                operational needs (Yocto, bash shell)). Perform ongoing performance tuning, hardware upgrades, and resource optimization as required
+                "
+            />
+          </Col>
+          <Col md={6} className="project-card">
+            <ProjectCard
+
+                isBlog={false}
+                title="Research Machine learning model, making the insightful and supervised application at Dankook University"
+                description="Develop the social media analysis applications (e.g., GeoSocialBoundary, Detetecting human, spammer, and bot on the social network, sentiment analysis) by using R program.
+			Develop IoT applications (e.g., Demo of smart home, smart car; Object tracing and detecting; lane detection applications"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+
+        </Row>
+        <h1 className="project-heading">
+          My Recent <strong className="purple">Publications </strong>
+        </h1>
+        <p style={{ color: "white" }}>
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={12} className="paper-card">
+
+            <PaperCards
+
+                description="Cong Tran, D. D. Vu* , and  Won-Yong Shin, An Improved Approach for Estimating Social POI Boundaries With Textual Attributes on Social Media, in  Knowledge-Based Systems  2020"
+                link  = "https://www.sciencedirect.com/science/article/pii/S095070512030839X?utm_campaign=STMJ_AUTH_SERV_PUBLISHED&utm_medium=email&utm_acid=149362166&SIS_ID=&dgcid=STMJ_AUTH_SERV_PUBLISHED&CMX_ID=&utm_in=DM110556&utm_source=AC_"
+            />
+          </Col>
+          <Col md={12} className="paper-card">
+
+            <PaperCards
+
+                description="Ekaterina Kochmar, D. D. Vu*,
+Robert Belfer, Varun Gupta, Iulian Vlad Serban, Joelle Pineau, Automated Personalized Feedback ImprovesLearning Gains in an Intelligent Tutoring System, in Artificial Intelligence Education 2020  "
+                link  = "https://link.springer.com/chapter/10.1007/978-3-030-52240-7_26"
+            />
+          </Col>
+          <Col md={12} className="paper-card">
+
+            <PaperCards
+
+                description="Iulian Vlad Serban,
+Varun Gupta, Ekaterina Kochmar, D. D. Vu*, Robert Belfer,Joelle Pineau,Aaron Courville,Laurent Charlin,Yoshua Bengio, Korbit: A Large-Scale, Open-Domain,Mixed-Interface Dialogue-Based ITS for STEM, in  Artificial Intelligence Education 2020  "
+                link  = "https://link.springer.com/chapter/10.1007/978-3-030-52240-7_70 "
+            />
+          </Col>
+          <Col md={12} className="paper-card">
+
+            <PaperCards
+
+                description="Cong Tran, D. D. Vu* , and  Won-Yong Shin, An Improved Approach for Estimating Social POI Boundaries With Textual Attributes on Social Media, in  Knowledge-Based Systems  "
+                link  = "https://www.sciencedirect.com/science/article/pii/S095070512030839X?utm_campaign=STMJ_AUTH_SERV_PUBLISHED&utm_medium=email&utm_acid=149362166&SIS_ID=&dgcid=STMJ_AUTH_SERV_PUBLISHED&CMX_ID=&utm_in=DM110556&utm_source=AC_"
+            />
+          </Col>
+          <Col md={12} className="paper-card">
+
+            <PaperCards
+
+                description="D. D. Vu* and G. Kaddoum, A Smart Waste City Management System for Smart Cities Applications, in Advances in Wireless and Optical Coomunications, Riga, Lativa, Nov. 2017  "
+                link  = "https://ieeexplore.ieee.org/document/8228538/"
+            />
+          </Col>
+          <Col md={12} className="paper-card">
+
+            <PaperCards
+
+                description="W.-Y. Shin and D. D. Vu*, Density-based estimation of POI boundaries using geo-tagged tweets, Journal of KICS, vol. 42, no. 2, pp. 453-459, February 2017  "
+                link  = "http://koreascience.or.kr/article/ArticleFullRecord.jsp?cn=GCSHCI_2017_v42n2_453"
+            />
+          </Col>
+          <Col md={12} className="paper-card">
+
+            <PaperCards
+
+                description="D. D. Vu*, H. To, W.-Y. Shin, and C. Shahabi, GeoSocialBound: An efficient framework for estimating social POI boundaries using spatio-textual information, in Proceedings of the International ACM SIGMOD Workshop on Managing and Mining Enriched Geo-Spatio Data (GeoRich), San Francisco, CA, June 2016  "
+                link  = "https://dl.acm.org/citation.cfm?id=2948652"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-            />
-          </Col>
+
         </Row>
       </Container>
     </Container>

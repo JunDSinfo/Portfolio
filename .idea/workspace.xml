@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="680eef16-cb59-4c2a-9b78-efd9acf43311" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Projects/PaperCards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/worldmap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/AboutCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Github.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Github.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Techstack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Techstack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Toolstack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Toolstack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/ProjectCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ProjectCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../junjun" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Projects/ProjectCards.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -36,6 +51,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/components/Projects/ProjectCards.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -50,7 +66,11 @@
       <workItem from="1626290424716" duration="4595000" />
       <workItem from="1626300536181" duration="6196000" />
       <workItem from="1626318035574" duration="513000" />
-      <workItem from="1626319057879" duration="1890000" />
+      <workItem from="1626319057879" duration="2346000" />
+      <workItem from="1626369483299" duration="1218000" />
+      <workItem from="1626371655887" duration="8824000" />
+      <workItem from="1626401671674" duration="2300000" />
+      <workItem from="1626404455187" duration="2267000" />
     </task>
     <servers />
   </component>

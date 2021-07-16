@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo2.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -78,9 +78,11 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Projects & Publications
               </Nav.Link>
             </Nav.Item>
+
+
 
             <Nav.Item>
               <Nav.Link
@@ -94,7 +96,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumyajit.tech/"
+                // href="https://blogs.soumyajit.tech/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -104,7 +106,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/JunDSinfo"
                 target="_blank"
                 className="fork-btn-inner"
               >
