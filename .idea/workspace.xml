@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="680eef16-cb59-4c2a-9b78-efd9acf43311" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Projects/PaperCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/AboutCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/Github.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Github.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/Techstack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Techstack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/Toolstack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Toolstack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/ProjectCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ProjectCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +60,7 @@
       <workItem from="1626369483299" duration="1218000" />
       <workItem from="1626371655887" duration="8824000" />
       <workItem from="1626401671674" duration="2300000" />
-      <workItem from="1626404455187" duration="2267000" />
+      <workItem from="1626404455187" duration="2445000" />
     </task>
     <servers />
   </component>
