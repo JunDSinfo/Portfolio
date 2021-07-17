@@ -96,7 +96,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                // href="https://blogs.soumyajit.tech/"
+                 href="http://localhost:3000/pwa/"
                 target="_blank"
                 rel="noreferrer"
               >
