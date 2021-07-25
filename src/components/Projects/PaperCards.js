@@ -7,7 +7,6 @@ function PaperCards(props) {
     return (
         <Card className="paper-card-view">
             <Card.Body>
-
                 <Card.Text style={{ textAlign: "justify" }}>
                     {props.description}
                     <Button variant="primary" href={props.link} target="_blank">

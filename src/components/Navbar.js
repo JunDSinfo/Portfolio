@@ -7,6 +7,10 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { BrowserRouter } from "react-router-dom";
+import LanguageDropDown from "./LanguageDropDown";
+import { useTranslation } from 'react-i18next';
+
 import {
   AiFillStar,
   AiOutlineHome,
@@ -17,8 +21,10 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
+
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { t } = useTranslation('common');
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -31,6 +37,7 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+
     <Navbar
       expanded={expand}
       fixed="top"
@@ -55,7 +62,7 @@ function NavBar() {
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t("Home")}
               </Nav.Link>
             </Nav.Item>
 
@@ -65,7 +72,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t("About")}
               </Nav.Link>
             </Nav.Item>
 
@@ -78,7 +85,8 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects & Publications
+                {t("Projects & Publications")}
+
               </Nav.Link>
             </Nav.Item>
 
@@ -90,19 +98,24 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {t("Resume")}
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                 href="http://localhost:3000/pwa/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
+              <LanguageDropDown/>
             </Nav.Item>
+
+            {/*<Nav.Item>*/}
+            {/* <Nav.Link*/}
+            {/*  href="http://localhost:3000/pwa/"*/}
+            {/* target="_blank"*/}
+            {/* rel="noreferrer"*/}
+            {/* >*/}
+             {/*<ImBlog style={{ marginBottom: "2px" }} /> Blogs*/}
+           {/*  </Nav.Link>*/}
+           {/*</Nav.Item>*/}
+
 
             <Nav.Item className="fork-btn">
               <Button

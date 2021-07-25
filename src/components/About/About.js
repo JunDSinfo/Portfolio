@@ -1,13 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about2.png";
 import Toolstack from "./Toolstack";
+import {useTranslation} from "react-i18next";
 
-function About() {
+function About(){
+  const { t } = useTranslation('common');
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -22,7 +23,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              {t("Know Who")} <strong className="purple">{t("I AM")}</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -35,13 +36,13 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          {t("Professional")} <strong className="purple">{t("Skillset")} </strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">{t("Tools")}</strong> {t("I use")}
         </h1>
         <Toolstack />
 

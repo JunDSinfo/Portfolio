@@ -3,28 +3,27 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import PaperCards from "./PaperCards";
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+  const { t } = useTranslation('common');
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Projects </strong>
+          {t("My Recent")} <strong className="purple">{t("Projects")} </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Because of the non-disclosure terms, only the description and role of product projects are shown.
+          {t("Because of the non-disclosure terms, only the description and role of product projects are shown.")}
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={6} className="project-card">
             <ProjectCard
 
               isBlog={false}
-              title="Natural Language Generation Research at Korbit"
-              description="Personal Hint Generations project is the part of Korbit
-               which was built with machine learning and state-of-the-art natural language
-               processing technique. The results allows Korbi - an AI Tutor to generate hint
-               based on the open source content with high student learning gain (43%)."
+              title={t("Natural Language Generation Research at Korbit")}
+              description={t("Personal Hint Generations project is the part of Korbit which was built with machine learning and state-of-the-art natural language processing technique. The results allows Korbi - an AI Tutor to generate hint based on the open source content with high student learning gain (43%).")}
             />
           </Col>
 
@@ -32,39 +31,30 @@ function Projects() {
             <ProjectCard
 
               isBlog={false}
-              title="Research Shazam Image project and Develop the User Interface of the Timesheet project at Biliomondo"
-              description="Research the application by using Python, and Android Studio, Webstorm, IntelliJ IDEA
-              (e.g., Research the Object recognition and Hologram module) by using CNN and Tensorflow.
-               Create the language locale and UI module by using Reactjs, Momentjs, Redux-sagas at Timesheet projecty"
+              title={t("Research Shazam Image project and Develop the User Interface of the Timesheet project at Biliomondo")}
+              description={t("Research the application by using Python, and Android Studio, Webstorm, IntelliJ IDEA (e.g., Research the Object recognition and Hologram module) by using CNN and Tensorflow. Create the language locale and UI module by using Reactjs, Momentjs, Redux-sagas at Timesheet projecty")}
             />
           </Col>
           <Col md={6} className="project-card">
             <ProjectCard
 
                 isBlog={false}
-                title="Civil Infrastruture Platform project at Renesas"
-                description="Apply OS patches and upgrades on a regular basis.
-                Configure/add new services as necessary and maintain a big system based
-                on big data analysis. Upgrade and configure system software that supports
-                infrastructure applications or Asset Management applications per project or
-                operational needs (Yocto, bash shell)). Perform ongoing performance tuning, hardware upgrades, and resource optimization as required
-                "
-            />
+                title={t("Civil Infrastruture Platform project at Renesas")}
+                description={t("Apply OS patches and upgrades on a regular basis. Configure add new services as necessary and maintain a big system based on big data analysis. Upgrade and configure system software that supports infrastructure applications or Asset Management applications per project or operational needs (Yocto, bash shell)). Perform ongoing performance tuning, hardware upgrades, and resource optimization as required" )}           />
           </Col>
           <Col md={6} className="project-card">
             <ProjectCard
 
                 isBlog={false}
-                title="Research Machine learning model, making the insightful and supervised application at Dankook University"
-                description="Develop the social media analysis applications (e.g., GeoSocialBoundary, Detetecting human, spammer, and bot on the social network, sentiment analysis) by using R program.
-			Develop IoT applications (e.g., Demo of smart home, smart car; Object tracing and detecting; lane detection applications"
-            />
+                title={t("Research Machine learning model, making the insightful and supervised application at Dankook University")}
+                description={t("Develop the social media analysis applications (e.g., GeoSocialBoundary, Detetecting human, spammer, and bot on the social network, sentiment analysis) by using R program.	Develop IoT applications (e.g., Demo of smart home, smart car; Object tracing and detecting; lane detection applications")}
+                    />
           </Col>
 
 
         </Row>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Publications </strong>
+          {t("My Recent")} <strong className="purple">{t("Publications")} </strong>
         </h1>
         <p style={{ color: "white" }}>
         </p>

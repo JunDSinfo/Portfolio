@@ -1,7 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/Vu.png";
+import sylvie from "../../Assets/sylvie.jpg";
 import Tilt from "react-parallax-tilt";
+import { useTranslation } from 'react-i18next';
+
+
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -9,45 +13,48 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
+
+
 function Home2() {
+  const { t } = useTranslation('common');
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              {t("LET ME")} <span className="purple"> {t("INTRODUCE")} </span>{t("MYSELF")}
             </h1>
             <p className="home-about-body">
-              I fell in love with machine and deep learning technologies,
+              {t("I fell in love with machine and deep learning technologies,")}
               <br />
-              <br />I am fluent in
+              <br />{t("I am fluent in")}
               <i>
-                <b className="purple"> Python, Pytorch, Elmo, Spacy, and R. </b>
+                <b className="purple"> {t("Python, Pytorch, Elmo, Spacy, and R.")} </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              {t("I am a commitment man. My field of Interests are building new")};
               <i>
-                <b className="purple">Machine Learning Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">{t("Machine Learning Technologies and Products")} </b> {t("and also in areas related to")}
                 <b className="purple">
-                  Deep Learning and Natural Language Processing.
+                  {t("Deep Learning and Natural Language Processing.")}
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also  read books and improve myself.
-              I like  <b className="purple">Sport</b> and
+              {t("Whenever possible I also  read books and improve myself.")}
+              {t("I like")}  <b className="purple">{t("Sport")}</b> {t("and")}
               <i>
                 <b className="purple">
                   {" "}
-                  Social activities
+                  {t("Social activities")}
                 </b>
               </i>
-              &nbsp; which
+              {t("which")}
               <i>
-                <b className="purple"> help me have a great energy and a balance life</b>
+                <b className="purple"> {t("help me have the great energy and a balance life")}</b>
+
               </i>
             </p>
           </Col>
@@ -57,11 +64,12 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>{t("FIND ME ON")}</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              {t("Feel free to")} <span className="purple">{t("connect")} </span>{t("with me")}
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
